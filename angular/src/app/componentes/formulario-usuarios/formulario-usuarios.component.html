@@ -1,0 +1,61 @@
+<body>
+    <div class="container contenedor">
+        <form class="row g-3 needs-validation" id="tablas" [formGroup]="usuarioss" novalidate>
+
+            <div class="col-md-3">
+                <label for="validationCustom01" class="form-label">ID:</label>
+                <input type="id" class="form-control" id="validationCustom01" formControlName="id" placeholder="" required>
+                <div class="valid-feedback">
+                    xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustom01" class="form-label">Nombre de Usuario:</label>
+                <input type="text" class="form-control" id="validationCustom01" formControlName="username" placeholder="Ej: samuel" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-5">
+                <label for="validationCustom03" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="validationCustom03" formControlName="email" required>
+                <div class="invalid-feedback">
+                    Please provide a valid city.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom05" class="form-label">Contraseña:</label>
+                <input type="password" class="form-control" id="validationCustom05" formControlName="password" required>
+                <div class="invalid-feedback">
+                    Please provide a valid zip.
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationCustom05" class="form-label">Fecha De Registro:</label>
+                <input type="text" class="form-control" id="validationCustom05" formControlName="date_joined" required>
+                <div class="invalid-feedback">
+                    Please provide a valid zip.
+                </div>
+            </div>
+
+            <div class="col-12 centro">
+                <button class="btn btn-primary" type="button" (click)="crear_usuarios()">Crear Usuario</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
